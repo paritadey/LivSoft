@@ -1,0 +1,37 @@
+[{
+    "displayName": "First Name",
+    "id": "c1",
+    "key": "first_name",
+    "type": "EditText",
+    "values": ""
+},
+{
+    "displayName": "Last Name",
+    "id": "c2",
+    "key": "last_name",
+    "type": "EditText",
+    "values": ""
+},
+{
+    "displayName": "Mobile Number",
+    "id": "c3",
+    "key": "mobile_number",
+    "type": "EditText",
+    "values": ""
+},
+
+{
+    "displayName": "Gender",
+    "id": "c4",
+    "key": "gender",
+    "type": "Radio Button",
+    "values": ""
+},
+{
+    "displayName": "submit",
+    "id": "c45701c6c74e4315b4c3fd9",
+    "key": "btn_submit_flag",
+    "type": "Button",
+    "values": ""
+}
+]
