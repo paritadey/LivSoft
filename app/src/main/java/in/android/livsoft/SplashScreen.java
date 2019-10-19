@@ -1,4 +1,4 @@
-package in.pubbs.livsoft;
+package in.android.livsoft;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,10 +12,10 @@ public class SplashScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
-        goMain();
+        goLogin();
     }
 
-    private void goMain() {
+    private void goLogin() {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="in.pubbs.livsoft">
+    package="in.android.livsoft">
 
     <application
         android:allowBackup="true"
@@ -9,12 +9,18 @@
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AddUser"
+        <activity
+            android:name=".ShowUsers"
+            android:label="Show Users"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddUsers"
+            android:label="Add Users"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Login"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
-        <activity android:name=".Login"
-            android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity
             android:name=".SplashScreen"
             android:screenOrientation="portrait"

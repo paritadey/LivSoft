@@ -5,4 +5,5 @@
     <string name="email">Email ID</string>
     <string name="add_user">Add User</string>
     <string name="submit">Submit</string>
+    <string name="show_db">Show User List</string>
 </resources>

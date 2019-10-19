@@ -1,4 +1,4 @@
-package in.pubbs.livsoft;
+package in.android.livsoft;
 
 import org.junit.Test;
 

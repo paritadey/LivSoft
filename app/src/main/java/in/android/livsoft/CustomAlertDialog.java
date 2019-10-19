@@ -1,4 +1,4 @@
-package in.pubbs.livsoft;
+package in.android.livsoft;
 
 import android.app.Dialog;
 import android.content.Context;

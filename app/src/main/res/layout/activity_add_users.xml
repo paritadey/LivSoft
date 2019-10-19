@@ -2,25 +2,22 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/show_users"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white"
-    tools:context=".AddUser">
-
-    <include
-        android:id="@+id/toolbar_layout"
-        layout="@layout/toolbar" />
+    tools:context=".AddUsers">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/card_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/twenty_four_dp"
-        android:layout_marginTop="@dimen/twenty_four_dp"
+        android:layout_marginHorizontal="@dimen/thirty_six_dp"
+        android:layout_marginTop="@dimen/thirty_six_dp"
         android:background="@android:color/white"
         app:cardCornerRadius="@dimen/twenty_dp"
         app:cardElevation="@dimen/twenty_dp"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar_layout">
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -66,6 +63,8 @@
                 android:layout_marginBottom="@dimen/twenty_four_dp"
                 android:background="@drawable/text_field_background"
                 android:hint="Mobile Number"
+                android:inputType="number"
+                android:maxLength="10"
                 android:padding="@dimen/sixteen_dp"
                 android:textColor="@color/colorPrimary"
                 android:textColorHint="@color/colorPrimary"
@@ -83,7 +82,6 @@
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:clickable="true"
                     android:padding="@dimen/eight_dp"
                     android:text="Female"
                     android:textColor="@color/colorPrimary"
@@ -92,7 +90,6 @@
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:clickable="true"
                     android:padding="@dimen/eight_dp"
                     android:text="Male"
                     android:textColor="@color/colorPrimary"
@@ -104,16 +101,43 @@
                 android:layout_width="@dimen/zero_dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/thirty_six_dp"
-                android:layout_marginBottom="@dimen/twenty_four_dp"
                 android:background="@drawable/round_button"
                 android:text="@string/submit"
                 android:textAllCaps="false"
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="@dimen/sixteen_sp"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@id/c4"
                 app:layout_constraintStart_toStartOf="@id/c4"
                 app:layout_constraintTop_toBottomOf="@id/c4" />
+
+            <Button
+                android:id="@+id/c5"
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/thirty_six_dp"
+                android:layout_marginBottom="@dimen/twenty_four_dp"
+                android:background="@drawable/round_button"
+                android:text="@string/show_db"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/sixteen_sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/c4"
+                app:layout_constraintStart_toStartOf="@id/c45701c6c74e4315b4c3fd9"
+                app:layout_constraintTop_toBottomOf="@id/c45701c6c74e4315b4c3fd9" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
+
+    <!--
+        <ImageView
+            android:id="@+id/add_user"
+            android:layout_width="@dimen/fifty_dp"
+            android:layout_height="@dimen/fifty_dp"
+            android:layout_marginEnd="@dimen/thirty_six_dp"
+            android:layout_marginBottom="@dimen/thirty_six_dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/ic_add" />
+    -->
 </androidx.constraintlayout.widget.ConstraintLayout>
