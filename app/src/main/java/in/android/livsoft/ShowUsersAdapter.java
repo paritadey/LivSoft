@@ -56,20 +56,5 @@ public class ShowUsersAdapter extends ArrayAdapter<UserList> {
     }
 
 
-    private void reloadEmployeesFromDatabase() {
-        Cursor cursorEmployees = mDatabase.rawQuery("SELECT * FROM employees", null);
-        if (cursorEmployees.moveToFirst()) {
-            userLists.clear();
-            do {
-                userLists.add(new UserList(
-                        cursorEmployees.getString(1),
-                        cursorEmployees.getString(2),
-                        cursorEmployees.getString(3)
-                ));
-            } while (cursorEmployees.moveToNext());
-        }
-        cursorEmployees.close();
-        notifyDataSetChanged();
-    }
-
+  
 }
