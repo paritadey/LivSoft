@@ -54,7 +54,4 @@ public class ShowUsersAdapter extends ArrayAdapter<UserList> {
         userGender.setText(userList.getGender());
         return view;
     }
-
-
-  
 }
